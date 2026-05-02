@@ -1,16 +1,64 @@
-# React + Vite
+# Multi-Category Catalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, dynamic web application built with React and Tailwind CSS that renders a product catalog from a provided JSON dataset.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Home Screen:** Categorizes and previews items dynamically from a JSON dataset.
+- **Item Detail Page:** Dynamically renders specific item properties based on their category.
+- **Responsive Design:** Fully mobile-friendly and responsive layout using Tailwind CSS.
+- **Modern UI:** Uses Lucide React for crisp, modern icons and styling.
+- **Client-Side Routing:** Fast, smooth navigation using React Router DOM.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework:** [React 19](https://react.dev/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Styling:** [Tailwind CSS 4](https://tailwindcss.com/)
+- **Routing:** [React Router DOM](https://reactrouter.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these instructions to get a copy of the project up and running on your local machine.
+
+### Prerequisites
+
+You need to have Node.js installed on your machine.
+
+### Installation
+
+1. Clone the repository or navigate to the project folder:
+   ```bash
+   cd -Multi_Category_Catalog
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to the local server address (usually `http://localhost:5173`).
+
+## Project Structure
+
+- `src/components/`: Reusable React components (e.g., `ItemCard.jsx`).
+- `src/pages/`: Main application pages (`Home.jsx`, `ItemDetail.jsx`).
+- `src/data.json`: The JSON dataset containing the categorized product data.
+- `src/App.jsx`: Main application component setting up routing.
+- `src/index.css`: Global styles and Tailwind CSS configuration.
+
+## Available Scripts
+
+In the project directory, you can run:
+
+- `npm run dev`: Runs the app in the development mode.
+- `npm run build`: Builds the app for production to the `dist` folder.
+- `npm run preview`: Locally preview the production build.
+- `npm run lint`: Run ESLint to catch potential issues.
+
